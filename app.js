@@ -23,23 +23,15 @@ fetch('https://indianrailapi.com/api/v2/StationLocationOnMap/apikey/'+api_key+'/
   line2.innerHTML = line2Value;
   // line3.innerHTML = line3Value;
 
-
+// TAKING THE URL WITHOUT HTTP PART
   var linkonly = line3Value.slice(7, );
   console.log(linkonly);
 
+// DISPLAYING MAP ON DOM
 line3.innerHTML =  `<div class="mapouter"><div class="gmap_canvas"><iframe width="300" 
 height="107" id="gmap_canvas" src="https://${linkonly}&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" 
 marginwidth="0"></iframe><a href="https://elitetorrent-es.com">elitetorrent</a></div><style>.mapouter{position:relative;text-align:right;
 height:107px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:107px;width:300px;}</style></div>`
-
-
-// console.log(line3Value);
-  // line3.innerHTML = `Hello ${linkonly}`
-  
-
-
-
-
 
 })
 
@@ -70,5 +62,3 @@ button1.addEventListener('click', function(){
   
 
 
-//   var map = data.URL;
-// console.log(`Yo, ${map}!`);
